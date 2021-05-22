@@ -1,0 +1,385 @@
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .slide-guts .caption h1 {
+        font-size: 4.0rem;
+    }
+
+    .section-text .title h1 {
+        font-size: 4.0rem;
+    }
+
+    a.main-button.auto {
+        flex-basis: auto;
+    }
+
+    .sub-page .home-guts .text h2 {
+        font-size: 4.0rem;
+    }
+
+    .sub-page .home-guts {
+        padding-bottom: 6.0rem;
+    }
+
+    .category .controls {
+        left: 0;
+        transform: none;
+    }
+
+    .category .controls .slide-prev {
+        margin-right: 1.0rem;
+    }
+
+    .category .controls .swiper-pagination {
+        display: none;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .nav-guts {
+        padding: 2.0rem 0;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .logo svg {
+        display: block;
+    }
+
+    .menu ul {
+        margin: 0;
+    }
+
+    .service .controls {
+        display: flex;
+    }
+
+    .footer .logo span {
+        display: block;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .row {
+        align-items: center;
+    }
+
+    .row .col {
+        flex-basis: 48%;
+    }
+
+    .row .col:nth-child(1) {
+        margin-right: 4%;
+    }
+
+    .section-images {
+        margin-bottom: 0;
+    }
+
+    .service-guts {
+        margin-top: 0;
+    }
+
+    .service .row .col:nth-child(1) {
+        max-width: 38%;
+    }
+
+    .service .row .col:nth-child(2) {
+        max-width: 58%;
+    }
+
+    .section.reverse .row {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .section.reverse .row .col:nth-child(1) {
+        margin-right: 0;
+        margin-left: 4%;
+    }
+
+    .section.reverse .section-text {
+        text-align: right;
+    }
+
+    .section.reverse .section-text h1 {
+        margin-right: -0.8rem;
+    }
+
+    .events .row {
+        justify-content: center;
+    }
+
+    .events .row .col {
+        flex-basis: 33%;
+        margin: 0;
+    }
+
+    .events .event {
+        border: none;
+    }
+
+    .events .col:not(:last-child) .event {
+        border-right: 1px solid #d9d9d9;
+    }
+
+    .footer-guts {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer .logo span {
+        margin-top: 0.5rem;
+    }
+
+    .footer-guts .links {
+        margin: 0;
+    }
+
+    .type .name {
+        text-align: left;
+    }
+
+    .checkout-wrap .checkout {
+        flex-basis: 45.0rem;
+    }
+
+    .cart-table .row .cell:first-child {
+        flex-basis: 50%;
+    }
+
+    .cart-table .row .cell:not(:first-child) {
+        text-align: left;
+        flex-basis: 25%;
+    }
+
+    .cart-table .product .preview {
+        display: block;
+        margin-right: 1.0rem;
+    }
+
+    form .group {
+        justify-content: space-between;
+    }
+
+    form .group .field {
+        flex-basis: 48%;
+    }
+
+    #checkout .group.reserve .field {
+        flex-basis: 31%;
+    }
+
+    .tabs:after,
+    .tabs:before {
+        width: 5.0rem;
+    }
+
+    .contact-detail {
+        padding: 0;
+    }
+
+    .gallery-guts .cards,
+    .contact-form #contact-form {
+        flex-basis: 68%;
+    }
+
+    .gallery-guts .contact-detail,
+    .contact-form .contact-detail {
+        flex-basis: 28%;
+    }
+
+    .section.contact-form {
+        padding: 6.0rem 0;
+    }
+
+    #contact-form .group .send-button {
+        margin-left: 3.0rem;
+        flex-basis: auto;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .nav>.container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    .nav-guts {
+        padding: 0;
+    }
+
+    .menu-head {
+        position: absolute;
+        margin: 0;
+
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        z-index: 2;
+    }
+
+    .shopping-cart {
+        padding: 0 0 0 1.7rem;
+        margin: 0;
+    }
+
+    .shopping-cart::after {
+        left: 0;
+    }
+
+    .shopping-cart a {
+        margin-bottom: 0.2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-right: 7.5rem;
+    }
+
+    .menu ul>*,
+    .menu.opened ul>*,
+    .menu:not(.opened) ul>* {
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        border: none;
+        margin-right: 1.7rem;
+    }
+
+    .menu ul>*:last-child {
+        margin: 0;
+    }
+
+    .menu li a.toggle-submenu::after {
+        display: none;
+    }
+
+    .menu {
+        overflow: visible;
+    }
+
+    .menu .dropdown {
+        left: 0;
+        top: 100%;
+        width: auto;
+
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        transform: none;
+    }
+
+    .menu .dropdown li {
+        margin: 0;
+    }
+
+    .menu .dropdown li a.back {
+        display: none;
+    }
+
+    .menu .dropdown li a {
+        color: #1e2633;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .menu .dropdown li a:hover {
+        color: #985e5b;
+    }
+
+    .home {
+        background-position: center 50%;
+    }
+
+    .service .text {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sub-page .nav {
+        background-color: transparent;
+    }
+
+    .sub-page .logo svg .cls-1 {
+        fill: #fff;
+    }
+
+    .sub-page .logo svg #mappin .cls-1 {
+        fill: none;
+    }
+
+    .sub-page .logo svg .cls-2,
+    .sub-page .logo svg #_1 {
+        stroke: #fff;
+    }
+
+    .sub-page .menu * {
+        color: #fff;
+    }
+
+    .sub-page .shopping-cart a {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 512 512'%3E%3Cpath d='M491.991 80h-372V20c0-11.046-8.954-20-20-20H20C8.954 0 0 8.954 0 20s8.954 20 20 20h59.991v292c0 11.046 8.954 20 20 20h332.513a19.999 19.999 0 0019.373-15.033l59.487-232C514.605 92.33 505.047 80 491.991 80zm-75.006 232H119.991V120h346.225zm-276.994 80c-33.084 0-60 26.916-60 60s26.916 60 60 60 60-26.916 60-60-26.916-60-60-60zm0 80c-11.028 0-20-8.972-20-20s8.972-20 20-20 20 8.972 20 20-8.972 20-20 20zm213.091-80c-33.084 0-60 26.916-60 60s26.916 60 60 60 60-26.916 60-60-26.916-60-60-60zm0 80c-11.028 0-20-8.972-20-20s8.972-20 20-20 20 8.972 20 20-8.972 20-20 20z'/%3E%3C/svg%3E");
+        color: #fff;
+    }
+
+    .sub-page .shopping-cart::after {
+        background-color: #fff;
+    }
+
+    .cart-guts {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .cart-table {
+        flex-basis: 68%;
+    }
+
+    .checkout-wrap {
+        flex-basis: 28%;
+        padding: 1.5rem 0 0 0;
+        border: none;
+    }
+
+    #checkout {
+        flex-basis: 68%;
+    }
+
+    .info-row {
+        justify-content: center;
+    }
+
+    .info-row .col:nth-child(2) {
+        flex-basis: 40%;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .section.reverse .section-text .body {
+        padding: 0 0 0 3.0rem;
+    }
+
+    .section .section-text .body {
+        padding: 0 3.0rem 0 0;
+    }
+
+    .info-row .col {
+        flex-basis: 40%;
+    }
+}
